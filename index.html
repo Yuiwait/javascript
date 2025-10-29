@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script>
+    var a=[1,2,3,4]
+    console.log(typeof(a))
+    var b=(undefined)
+    console.log(typeof(b))
+    var c={
+      name:"sanjay",
+      branch:"cse",
+    }
+    console.log(c.name,c.branch)
+    var d=prompt("enter email")
+    var e=prompt("enter password")
+    if(d=="r0747514@gmail.com",e=="sanjay"){
+      document.write("hello world")
+    }else{
+      document.write("no hello")
+    }
+  </script> -->
+  <div id="text">
+    <p id="button">hello world</p>
+    <button onclick="demo()">change text</button>
+    <button onclick="change()">color</button>
+    <button onclick="normal()">normal</button>
+  </div>
+  <script>
+    const demo = () => {
+
+      document.getElementById("button").innerHTML="change text";
+    }
+    const change = () => {
+      const colorDIV= document.getElementById("text");
+      colorDIV.style.backgroundColor = "black";
+      colorDIV.style.color="white";
+    }
+    const normal = () => {
+      const colorDIV=document.getElementById("text");
+      colorDIV.style.backgroundColor = "white";
+      colorDIV.style.color="black";
+    }
+  </script>
+</body>
+</html>
